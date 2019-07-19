@@ -1,8 +1,7 @@
 FROM ubuntu:xenial
-ADD build.sh build.sh
+ADD Alphanet/build.sh build.sh
 RUN chmod +x build.sh
 RUN ./build.sh
-RUN pwd
 
 
 FROM ubuntu:xenial
