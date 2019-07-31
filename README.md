@@ -12,7 +12,7 @@ https://hub.docker.com/r/tuliptools/tezos
 ```
 docker pull tuliptools/tezos:mainnet
 docker volume create tezdata
-docker run -it --rm -v teezdata:/root/.tezos-node tuliptools/tezos:mainnet tezos-node identity generate
-docker run -d --name tezos -v teezdata:/root/.tezos-node tuliptools/tezos:mainnet tezos-node run
+docker run -it --rm -v tezdata:/root/.tezos-node tuliptools/tezos:mainnet tezos-node identity generate
+docker run -d --name tezos -v tezdata:/root/.tezos-node tuliptools/tezos:mainnet tezos-node run
 docker logs -f tezos
 ```
